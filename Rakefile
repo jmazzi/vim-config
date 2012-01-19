@@ -26,5 +26,5 @@ task :fetch_plugins do
 end
 
 def manifest
-  %w[vim vimrc gvimrc].sort
+  %w[vimrc gvimrc].sort
 end
