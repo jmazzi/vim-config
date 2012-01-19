@@ -5,7 +5,6 @@ colorscheme solarized
 
 if has("gui_macvim")
   macmenu &File.New\ Tab key=<nop>
-  " map <D-t> :CommandT<CR>
   map <D-t> :CtrlP<CR>
   set gfn=set guifont=Monospace\ 8
 else
