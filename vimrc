@@ -129,6 +129,9 @@ map <leader>l :set list! list?<CR>
 " Remap space to :
 noremap <space> :
 
+" Show tags
+nmap <F8> :TagbarToggle<CR>
+
 " Already handled
 let g:ctrlp_working_path_mode = 0
 " let g:ctrlp_split_window = 1
