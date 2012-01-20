@@ -152,4 +152,4 @@ let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_show_privates = 1
 
 " let g:gist_open_browser_after_post = 1
-" let g:gist_browser_command = 'google-chrome %URL% &'
+let g:gist_browser_command = 'google-chrome %URL% &'
