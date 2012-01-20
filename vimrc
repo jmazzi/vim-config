@@ -59,6 +59,12 @@ map <C-K> <C-W>k<15C-W>
 map <C-h> <C-W>h<15C-W>_
 map <C-l> <C-W>l<15C-W>
 
+" ,s - Open the associated file in a horizontal split (ruby)
+map <leader>s :AS<cr>
+
+" ,v - Open the associated file in a vertical split (ruby)
+map <leader>v :AV<cr>
+
 " Searching
 map <Leader>f :Ack<space>
 
