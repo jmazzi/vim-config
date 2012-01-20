@@ -1,11 +1,53 @@
+" Turn off vi compat
+set nocompatible
+
 call pathogen#infect()
+
 syntax on
+
+" Enable file type detection.
+" Use the default filetype settings, so that mail gets 'tw' set to 72,
+" 'cindent' is on in C files, etc.
+" Also load indent files, to automatically do language-dependent indenting.
 filetype plugin indent on
+
+" Remember more
+set history=1000
 
 let mapleader=","
 
-set noignorecase
+" Make tab completion for files/buffers act like bash
+set wildmenu
 
+" Make searches case-sensitive only if they contain upper-case characters
+set ignorecase
+set smartcase
+
+" GRB: sane editing configuration"
+set expandtab
+set tabstop=2
+set shiftwidth=2
+set softtabstop=2
+set autoindent
+" set smartindent
+set laststatus=2
+set showmatch
+set incsearch
+
+" Horizontal splits open below the current buffer
+set splitbelow
+
+" Vertical splits open to the right of the current buffer
+set splitright
+
+" Store temporary files in a central spot
+set backupdir=~/.vim/.backup
+set directory=~/.vim/.backup
+
+" STOP FLASHING AT ME
+set noerrorbells visualbell t_vb=
+
+" Turn off arrow scrolling
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
@@ -17,9 +59,13 @@ map <C-K> <C-W>k<15C-W>
 map <C-h> <C-W>h<15C-W>_
 map <C-l> <C-W>l<15C-W>
 
+" Searching
 map <Leader>f :Ack<space>
+
+" Show NERDTree
 map <Leader>d :NERDTreeToggle<CR>
 
+" Jump by 20 lines at a time
 no J 20j
 no K 20k
 
@@ -78,13 +124,6 @@ map <leader>l :set list! list?<CR>
 let g:ctrlp_working_path_mode = 0
 " let g:ctrlp_split_window = 1
 
-set splitbelow
-set splitright
-
-" set wildmode=list:full
-
 let g:ctrlp_map = '<c-t>'
 
-" STOP FLASHING AT ME
-set noerrorbells visualbell t_vb=
 autocmd GUIEnter * set visualbell t_vb=
