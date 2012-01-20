@@ -25,6 +25,19 @@ task :fetch_plugins do
   system %Q{git submodule update --init}
 end
 
+desc "Update all installed plugins"
+task :update do
+  puts "Updating plugins"
+  system "git submodule foreach 'git checkout master; git pull'"
+end
+
+desc "Generate helptags"
+task :helptags do
+  puts "Generating helptags"
+  sh "vim -e -c 'Helptags|q' 2>&1 /dev/null"
+end
+
+
 def manifest
   %w[vimrc gvimrc].sort
 end
