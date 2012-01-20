@@ -10,8 +10,6 @@ if has("gui_macvim")
 else
   set gfn=set guifont=EspressoMono\ 8
   " set gfn=set guifont=Monospace\ 8
-  map <C-t> :CtrlP<CR>
-  imap <C-t> <Esc>:CtrlP<CR>
   " set gfn=set guifont=Bitstream\ Vera\ Sans\ Mono\ 9
 end
 

@@ -127,3 +127,7 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_map = '<c-t>'
 
 autocmd GUIEnter * set visualbell t_vb=
+
+" Snippets
+let g:snippets_dir = '~/.vim/bundle/snipmate-snippets/'
+source ~/.vim/bundle/snipmate-snippets/support_functions.vim
