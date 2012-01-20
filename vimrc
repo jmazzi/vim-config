@@ -80,7 +80,6 @@ nmap gV `[v`]
 
 " colorscheme Tomorrow-Night
 colorscheme default
-let g:HammerQuiet = 1
 
 " Chef
 map <M-a> :ChefFindAny<CR>
@@ -130,16 +129,24 @@ map <leader>l :set list! list?<CR>
 noremap <space> :
 
 " Show tags
-nmap <F8> :TagbarToggle<CR>
+map <leader>T :TagbarToggle<cr>
+
+" Focus the window when it's launched
+let g:tagbar_autofocus = 1
 
 " Already handled
 let g:ctrlp_working_path_mode = 0
-" let g:ctrlp_split_window = 1
-
 let g:ctrlp_map = '<c-t>'
+
 
 autocmd GUIEnter * set visualbell t_vb=
 
 " Snippets
 let g:snippets_dir = '~/.vim/bundle/snipmate-snippets/'
 source ~/.vim/bundle/snipmate-snippets/support_functions.vim
+
+" Gist clipboard
+let g:gist_clip_command = 'xclip -selection clipboard'
+
+" Show my private gists
+let g:gist_show_privates = 1
