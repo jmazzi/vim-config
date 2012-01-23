@@ -107,12 +107,6 @@ vmap <Leader>a, :Tabularize /,\zs/l1r0<CR>
 " nnoremap <silent> <Space> @=(foldlevel('.')?'za':'l')<CR>
 " vnoremap <Space> zf
 
-" Save folds
-" autocmd BufWinLeave * silent! mkview
-" autocmd BufWinEnter * silent! loadview
-" Open git commits at the first line
-autocmd VimEnter .git/COMMIT_EDITMSG exe "normal! gg"
-
 " ,wr to toggle wrap/no wrap
 map <leader>wr :set nowrap! nowrap?<CR>
 
@@ -139,7 +133,22 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_map = '<c-t>'
 
 
-autocmd GUIEnter * set visualbell t_vb=
+if has("autocmd")
+  autocmd GUIEnter * set visualbell t_vb=
+  " Save folds
+  " autocmd BufWinLeave * silent! mkview
+  " autocmd BufWinEnter * silent! loadview
+  "
+  " Open git commits at the first line
+  autocmd VimEnter .git/COMMIT_EDITMSG exe "normal! gg"
+
+  " Add :Rfactory command
+  autocmd User Rails Rnavcommand factory spec/factories test/factories -suffix=.rb -default=model()
+
+  " Add :Rconfig command
+  autocmd User Rails Rnavcommand config config -glob=*.* -suffix= -default=routes.rb
+end
+
 
 " Snippets
 let g:snippets_dir = '~/.vim/bundle/snipmate-snippets/'
