@@ -120,6 +120,9 @@ map <leader>n :set number! number?<CR>
 " ,l to toggle list
 map <leader>l :set list! list?<CR>
 
+" ,y show Yanks
+map <leader>y :YRShow<cr>
+
 " Remap space to :
 noremap <space> :
 
