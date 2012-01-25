@@ -1,5 +1,6 @@
 " Turn off vi compat
 set nocompatible
+set number
 
 call pathogen#infect()
 
