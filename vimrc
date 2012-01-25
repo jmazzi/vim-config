@@ -121,7 +121,7 @@ map <leader>n :set number! number?<CR>
 map <leader>l :set list! list?<CR>
 
 " ,y show Yanks
-map <leader>y :YRShow<cr>
+map <leader>y :YRShow<CR>
 
 " Remap space to :
 noremap <space> :
