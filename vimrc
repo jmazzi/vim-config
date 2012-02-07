@@ -68,6 +68,7 @@ map <leader>v :AV<cr>
 
 " Searching
 map <Leader>f :Ack<space>
+map <Leader>F :AckFromSearch<CR>
 
 " Show NERDTree
 map <Leader>d :NERDTreeToggle<CR>
