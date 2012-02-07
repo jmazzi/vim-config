@@ -76,3 +76,6 @@
 [submodule "bundle/jekyll"]
 	path = bundle/jekyll
 	url = https://github.com/itspriddle/vim-jekyll.git
+[submodule "bundle/zoomwin"]
+	path = bundle/zoomwin
+	url = https://github.com/vim-scripts/ZoomWin.git

@@ -129,6 +129,9 @@ noremap <space> :
 " Show tags
 map <leader>T :TagbarToggle<cr>
 
+" Zoom in on a buffer
+map <leader><leader> :ZoomWin<cr>
+
 " Focus the window when it's launched
 let g:tagbar_autofocus = 1
 
