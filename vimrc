@@ -48,6 +48,10 @@ set directory=~/.vim/.backup
 " STOP FLASHING AT ME
 set noerrorbells visualbell t_vb=
 
+" Preserve undo across sessions
+set undodir=~/.vim/.tmp/undo//
+set undofile
+
 " Turn off arrow scrolling
 map <up> <nop>
 map <down> <nop>
@@ -169,5 +173,5 @@ let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_show_privates = 1
 
 " Open in a browser
-let g:gist_open_browser_after_post = 1
+let g:gist_open_browser_after_post = 0
 let g:gist_browser_command = 'google-chrome %URL% &'
