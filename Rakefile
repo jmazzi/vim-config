@@ -1,4 +1,3 @@
-# copied from http://github.com/josh/dotfiles/raw/master/Rakefile
 task :default => :install
 
 desc "Install the dot files into user's home directory"
