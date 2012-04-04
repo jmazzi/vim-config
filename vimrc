@@ -159,6 +159,29 @@ if has("autocmd")
 
   " Add :Rconfig command
   autocmd User Rails Rnavcommand config config -glob=*.* -suffix= -default=routes.rb
+
+
+  " CoffeeScript {{{
+
+  augroup ft_coffee
+    autocmd!
+
+    " Compile the current buffer in a vertical split
+    autocmd FileType coffee nnoremap <buffer> <leader>cc :CoffeeCompile vert<cr>
+
+    " Compile the current selection in a vertical split
+    autocmd FileType coffee vnoremap <buffer> <leader>cc :CoffeeCompile vert<cr>
+
+    " Compile and run the current buffer
+    autocmd FileType coffee nnoremap <buffer> <leader>cr :CoffeeRun<cr>
+    autocmd FileType coffee vnoremap <buffer> <leader>cR :CoffeeRun<cr>
+
+    " Compile the current buffer, output the result to a new file.
+    autocmd FileType coffee nnoremap <buffer> <leader>cm :CoffeeMake<cr>
+
+    " Same as above, Intentionally has no <cr> so an option can be added
+    autocmd FileType coffee nnoremap <buffer> <leader>cM :CoffeeMake
+  augroup END
 end
 
 
