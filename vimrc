@@ -1,6 +1,6 @@
 " Turn off vi compat
 set nocompatible
-set number
+set nonumber
 
 call pathogen#infect()
 
@@ -51,6 +51,9 @@ set noerrorbells visualbell t_vb=
 " Preserve undo across sessions
 set undodir=~/.vim/.tmp/undo//
 set undofile
+
+" Resize splits when the window is resized
+au VimResized * :wincmd =
 
 " Turn off arrow scrolling
 map <up> <nop>
