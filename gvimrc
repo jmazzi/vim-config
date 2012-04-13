@@ -24,4 +24,4 @@ set guioptions-=l
 set guioptions-=L
 set guioptions-=m
 
-set background=light
+set background=dark
