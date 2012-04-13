@@ -161,7 +161,7 @@ if has("autocmd")
   autocmd User Rails Rnavcommand config config -glob=*.* -suffix= -default=routes.rb
 
 
-  " CoffeeScript {{{
+  " CoffeeScript
 
   augroup ft_coffee
     autocmd!
@@ -181,6 +181,33 @@ if has("autocmd")
 
     " Same as above, Intentionally has no <cr> so an option can be added
     autocmd FileType coffee nnoremap <buffer> <leader>cM :CoffeeMake
+  augroup END
+
+
+  " Git
+
+  augroup ft_git
+    autocmd!
+
+    " Place the cursor at the top of the buffer
+    autocmd VimEnter .git/COMMIT_EDITMSG exe 'normal! gg'
+
+    " Alias Gpush
+    autocmd User Fugitive command! -buffer Gpush exe 'Git push'
+
+    " Show git status for the repo
+    autocmd User Fugitive noremap <buffer> <leader>gs :Gstatus<cr>
+
+    " Write the current buffer to git index
+    autocmd User Fugitive noremap <buffer> <leader>gw :Gwrite<cr>
+
+    " Commit current git index
+    autocmd User Fugitive noremap <buffer> <leader>gc :Gcommit -m ""<left>
+
+    " Push current branch upstream
+    autocmd User Fugitive noremap <buffer> <leader>gp :Gpush<cr>
+
+    autocmd VimEnter .git/PULLREQ_EDIT_MSG setl wrap textwidth=0
   augroup END
 end
 
