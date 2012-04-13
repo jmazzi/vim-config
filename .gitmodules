@@ -70,9 +70,6 @@
 [submodule "bundle/tagbar"]
 	path = bundle/tagbar
 	url = https://github.com/majutsushi/tagbar.git
-[submodule "bundle/YankRing"]
-	path = bundle/YankRing
-	url = https://github.com/vim-scripts/YankRing.vim.git
 [submodule "bundle/jekyll"]
 	path = bundle/jekyll
 	url = https://github.com/itspriddle/vim-jekyll.git
