@@ -52,6 +52,9 @@ set noerrorbells visualbell t_vb=
 set undodir=~/.vim/.tmp/undo//
 set undofile
 
+" Preview size
+set previewheight=50
+
 " Resize splits when the window is resized
 au VimResized * :wincmd =
 
