@@ -229,6 +229,6 @@ let g:gist_show_privates = 1
 let g:gist_open_browser_after_post = 0
 let g:gist_browser_command = 'google-chrome %URL% &'
 
-" Don't complete before nothing or after space, comma or ]
+" Don't complete before nothing, after space, comma or ]
 let g:SuperTabNoCompleteBefore=[]
 let g:SuperTabNoCompleteAfter=[',','\s', ']']
