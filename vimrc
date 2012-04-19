@@ -228,3 +228,6 @@ let g:gist_show_privates = 1
 " Open in a browser
 let g:gist_open_browser_after_post = 0
 let g:gist_browser_command = 'google-chrome %URL% &'
+
+let g:SuperTabNoCompleteBefore=[]
+let g:SuperTabNoCompleteAfter=[',','\s', ']']
