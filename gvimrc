@@ -1,4 +1,4 @@
-colorscheme solarized
+colorscheme badwolf
 " colorscheme Tomorrow-Night
 " colorscheme new-autumn
 " set gfn=Menlo:h10
