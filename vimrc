@@ -111,6 +111,10 @@ vmap <Leader>a: :Tabularize /:\zs/l0r1<CR>
 nmap <Leader>a, :Tabularize /,\zs/l1r0<CR>
 vmap <Leader>a, :Tabularize /,\zs/l1r0<CR>
 
+" Format XML
+nmap <Leader>x :%!xmllint --format -<CR>
+vmap <Leader>x :!xmllint --format -<CR>
+
 " Folding
 " set viewdir=~/.vim/view
 " set viewoptions=folds,cursor
