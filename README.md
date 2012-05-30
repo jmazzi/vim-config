@@ -1,4 +1,10 @@
-Just run `rake install`
+Just run 
+
+```shell
+git clone git://github.com/jmazzi/vim-config.git ~/.vim
+cd ~/.vim
+rake install
+```
 
 ```shell
 rake fetch_plugins  # Download git submodules
