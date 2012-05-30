@@ -49,8 +49,10 @@ set directory=~/.vim/.backup
 set noerrorbells visualbell t_vb=
 
 " Preserve undo across sessions
-set undodir=~/.vim/.tmp/undo//
-set undofile
+if exists("&undodir")
+  set undodir=~/.vim/.tmp/undo//
+  set undofile
+endif
 
 " Preview size
 set previewheight=50
