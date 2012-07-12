@@ -34,6 +34,7 @@ set autoindent
 set laststatus=2
 set showmatch
 set incsearch
+set bs=2
 
 " Horizontal splits open below the current buffer
 set splitbelow
