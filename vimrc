@@ -155,6 +155,7 @@ let g:tagbar_autofocus = 1
 " Already handled
 let g:ctrlp_working_path_mode = 0
 let g:ctrlp_map = '<c-t>'
+let g:ctrlp_regexp = 1
 
 
 if has("autocmd")
