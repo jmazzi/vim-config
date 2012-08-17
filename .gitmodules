@@ -46,9 +46,6 @@
 [submodule "bundle/liquid"]
 	path = bundle/liquid
 	url = git://github.com/tpope/vim-liquid.git
-[submodule "bundle/lesscss"]
-	path = bundle/lesscss
-	url = git://github.com/itspriddle/vim-lesscss.git
 [submodule "bundle/jquery"]
 	path = bundle/jquery
 	url = git://github.com/itspriddle/vim-jquery.git
