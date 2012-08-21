@@ -27,7 +27,7 @@ end
 desc "Update all installed plugins"
 task :update do
   puts "Updating plugins"
-  system "git submodule foreach 'git checkout master; git pull'"
+  system "git submodule foreach 'git pull'"
   Rake::Task['helptags'].invoke
 end
 
